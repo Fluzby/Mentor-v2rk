@@ -1,0 +1,194 @@
+html,body{
+    height: 99%;
+    width: 99.5%;   
+}
+
+@font-face {
+    font-family: 'cFont';
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500, 700, 800;
+    font-style: normal;
+}
+
+.container{ 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    font-family: cFont;
+    font-size: 20px;
+    color: white;
+    font-weight: 500,700,800;
+}
+
+.result h1{
+    font-family: cFont;
+    color: white;
+}
+
+p{
+    padding-top: 40px;
+    font-size: 40px;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0) 100%);
+    padding-top: 8%;
+}
+
+.result{
+    justify-content: space-between;
+    width: 50%;
+    height:100%;
+    background-color: rgb(66, 131, 221);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+}
+
+.summary{
+    width:50%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary h1{
+    padding-left: 60px;
+    font-family: cFont;
+}
+
+.summaryMain{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summaryContainer{
+    height:15%;
+    border-radius: 20px;
+    width: 80%;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summaryContainer span{
+    font-family: cFont;
+    padding-left: 20px;
+    font-size: 30px;
+    color: white;
+    font-weight: 500,700,800;
+}
+
+.summaryContainer img{
+    padding-left: 20px;
+    width: 20%;
+    min-width: 20%;
+}
+
+.summaryName{
+    display: flex;
+    width: 50%;
+    height:100%;
+    align-items: center;
+}
+
+button{
+    width:70%;
+    height: 15%;
+    border-radius: 500px;
+    margin-bottom: 7%;
+    background-color: hsl(224, 30%, 27%);
+    cursor: pointer;
+    font-family: cFont;
+    font-size: 210%;
+    font-weight: 500,700,800;
+    color: white;
+}
+
+button:hover{
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%)
+}
+
+#circle1{
+    font-size: 100px;
+    font-family: cFont;
+    color: white;
+}
+#scoreText{
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 878px) {
+    .summaryContainer span{
+        font-size: 20px;
+    }
+
+    .circle{
+        height:300px;
+        width:300px;
+    }
+}
+@media only screen and (max-width: 712px) {
+    .summaryContainer span{
+        font-size: 15px;
+    }
+
+    .circle{
+        height:270px;
+        width:270px;
+    }
+}
+@media only screen and (max-width: 597px) {
+    .container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .result{
+        margin-top: -30px;
+        padding: 10px;
+        padding-top: 20px;
+        width: 100%;
+        height:45%;
+        overflow:hidden;
+    }
+    .summary{
+        width:100%;
+        height:55%;
+    }
+    .circle{
+        height: 125px;
+        width: 125px;
+    }
+    .result h1{
+        font-size:20px;
+    }
+    #circle1{
+        font-size: 35px;
+    }
+    #scoreText{
+        font-size: 17px;
+    }
+}
